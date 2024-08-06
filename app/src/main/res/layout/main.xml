@@ -1,19 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/All"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:ignore="MissingPrefix">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Equation"
+        android:text="输入算式"
+        style="@style/EqualtionANDResultTextview" />
+
+    <TextView
+        android:id="@+id/Result"
+
+        style="@style/EqualtionANDResultTextview"
+        android:layout_below="@id/Equation"
+        android:text="结果" />
+
+    <RelativeLayout
+        android:id="@+id/Buttons"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Result">
+
+        <RelativeLayout
+            android:id="@+id/FirstRow"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <Button
+                android:id="@+id/PerCentSign"
+                style="@style/FirstInRow"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/RootSign"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/PerCentSign"
+                android:text="√" />
+
+            <Button
+                android:id="@+id/Square"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/RootSign"
+                android:text="x²" />
+
+            <Button
+                android:id="@+id/OneInX"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Square"
+                android:text="1/x" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SecondRow"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@id/FirstRow">
+
+            <Button
+                android:id="@+id/ClearEnter"
+                style="@style/FirstInRow"
+                android:text="CE" />
+
+            <Button
+                android:id="@+id/ClearAll"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/ClearEnter"
+                android:text="CA" />
+
+            <Button
+                android:id="@+id/Back"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/ClearAll"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/DivisionSign"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Back"
+                android:text="÷" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ThirdRow"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@id/SecondRow">
+
+            <Button
+                android:id="@+id/Seven"
+                style="@style/FirstInRow"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/Eight"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Seven"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/Nine"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Eight"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/MultipleSign"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Nine"
+                android:text="x" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/FourthRow"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@id/ThirdRow">
+
+            <Button
+                android:id="@+id/Four"
+                style="@style/FirstInRow"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/Five"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Four"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/Six"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Five"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/MinusSign"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Six"
+                android:text="-" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/FifthRow"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@id/FourthRow">
+
+            <Button
+                android:id="@+id/One"
+                style="@style/FirstInRow"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/Two"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/One"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/Three"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Two"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/PlusSign"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Three"
+                android:text="+" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SixthRow"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@id/FifthRow">
+
+            <Button
+                android:id="@+id/Sign"
+                style="@style/FirstInRow"
+                android:text="±" />
+
+            <Button
+                android:id="@+id/Zero"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Sign"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/Dot"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Zero"
+                android:text="." />
+
+            <Button
+                android:id="@+id/EqualSign"
+                style="@style/OthersInRow"
+                android:layout_toRightOf="@id/Dot"
+                android:text="=" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/PermissioStatement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Buttons"
+        android:alpha="0.25"
         android:gravity="center"
-        android:text="Hello World"
-        android:textColor="@color/black"
-        android:textSize="48sp"
+        android:text="Made by Yu Liang and Chen Hongzhi"
         android:textStyle="bold|italic" />
+
 </RelativeLayout>
