@@ -9,8 +9,9 @@
 
     <TextView
         android:id="@+id/Equation"
-        android:text="输入算式"
-        style="@style/EqualtionANDResultTextview" />
+        style="@style/EqualtionANDResultTextview"
+        android:gravity="right|center_vertical"
+        android:text="输入算式" />
 
     <TextView
         android:id="@+id/Result"
