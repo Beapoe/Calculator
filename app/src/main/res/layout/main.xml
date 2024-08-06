@@ -34,24 +34,28 @@
             <Button
                 android:id="@+id/PerCentSign"
                 style="@style/FirstInRow"
+                android:onClick="PCS_OnClick"
                 android:text="%" />
 
             <Button
                 android:id="@+id/RootSign"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/PerCentSign"
+                android:onClick="RS_OnClick"
                 android:text="√" />
 
             <Button
                 android:id="@+id/Square"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/RootSign"
+                android:onClick="Sq_OnClick"
                 android:text="x²" />
 
             <Button
                 android:id="@+id/OneInX"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Square"
+                android:onClick="OIX_OnClick"
                 android:text="1/x" />
         </RelativeLayout>
 
@@ -64,24 +68,28 @@
             <Button
                 android:id="@+id/ClearEnter"
                 style="@style/FirstInRow"
+                android:onClick="CE_OnClick"
                 android:text="CE" />
 
             <Button
                 android:id="@+id/ClearAll"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/ClearEnter"
+                android:onClick="CA_OnClick"
                 android:text="CA" />
 
             <Button
                 android:id="@+id/Back"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/ClearAll"
+                android:onClick="B_OnClick"
                 android:text="Back" />
 
             <Button
                 android:id="@+id/DivisionSign"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Back"
+                android:onClick="DS_OnClick"
                 android:text="÷" />
         </RelativeLayout>
 
@@ -94,24 +102,28 @@
             <Button
                 android:id="@+id/Seven"
                 style="@style/FirstInRow"
+                android:onClick="Se_OnClick"
                 android:text="7" />
 
             <Button
                 android:id="@+id/Eight"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Seven"
+                android:onClick="E_OnClick"
                 android:text="8" />
 
             <Button
                 android:id="@+id/Nine"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Eight"
+                android:onClick="N_OnClick"
                 android:text="9" />
 
             <Button
                 android:id="@+id/MultipleSign"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Nine"
+                android:onClick="MS_OnClick"
                 android:text="x" />
 
         </RelativeLayout>
@@ -125,24 +137,28 @@
             <Button
                 android:id="@+id/Four"
                 style="@style/FirstInRow"
+                android:onClick="F_OnClick"
                 android:text="4" />
 
             <Button
                 android:id="@+id/Five"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Four"
+                android:onClick="Fi_OnClick"
                 android:text="5" />
 
             <Button
                 android:id="@+id/Six"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Five"
+                android:onClick="S_OnClick"
                 android:text="6" />
 
             <Button
                 android:id="@+id/MinusSign"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Six"
+                android:onClick="MiS_OnClick"
                 android:text="-" />
 
         </RelativeLayout>
@@ -156,24 +172,28 @@
             <Button
                 android:id="@+id/One"
                 style="@style/FirstInRow"
+                android:onClick="O_OnClick"
                 android:text="1" />
 
             <Button
                 android:id="@+id/Two"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/One"
+                android:onClick="T_OnClick"
                 android:text="2" />
 
             <Button
                 android:id="@+id/Three"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Two"
+                android:onClick="Th_OnClick"
                 android:text="3" />
 
             <Button
                 android:id="@+id/PlusSign"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Three"
+                android:onClick="PS_OnClick"
                 android:text="+" />
         </RelativeLayout>
 
@@ -186,24 +206,28 @@
             <Button
                 android:id="@+id/Sign"
                 style="@style/FirstInRow"
+                android:onClick="Si_OnClick"
                 android:text="±" />
 
             <Button
                 android:id="@+id/Zero"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Sign"
+                android:onClick="Z_OnClick"
                 android:text="0" />
 
             <Button
                 android:id="@+id/Dot"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Zero"
+                android:onClick="D_OnClick"
                 android:text="." />
 
             <Button
                 android:id="@+id/EqualSign"
                 style="@style/OthersInRow"
                 android:layout_toRightOf="@id/Dot"
+                android:onClick="Eq_OnClick"
                 android:text="=" />
         </RelativeLayout>
 
