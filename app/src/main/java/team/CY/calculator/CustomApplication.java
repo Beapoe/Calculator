@@ -3,10 +3,12 @@ package team.CY.calculator;
 import android.app.Application;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CustomApplication extends Application {
     private ArrayList<Character> InputStream,OutputStream;
     private boolean clicked = false;
+    private final ArrayList<Character> JudgementCharacterSet = new ArrayList<>(Arrays.asList('%','√','²','/','÷','x','-','+','±','.','=','1','2','3','4','5','6','7','8','9','0'));
 
     public ArrayList<Character> getInputStream(){
         if(InputStream == null){
@@ -40,5 +42,9 @@ public class CustomApplication extends Application {
 
     public void setClicked(boolean clicked) {
         this.clicked = clicked;
+    }
+
+    public ArrayList<Character> getJudgementCharacterSet() {
+        return JudgementCharacterSet;
     }
 }
