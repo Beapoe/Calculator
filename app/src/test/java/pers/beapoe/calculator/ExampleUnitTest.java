@@ -1,4 +1,4 @@
-package team.CY.calculator;
+package pers.beapoe.calculator;
 
 import org.junit.Test;
 
